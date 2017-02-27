@@ -1,4 +1,4 @@
-package Calculatrice;
+package Calculatrice.ProjetJava;
 
 import java.util.ArrayList;
 import java.util.Scanner;
