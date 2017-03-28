@@ -11,7 +11,7 @@ public class Moyenne {
 		
 		for(int i=1; i <= nombre_valeur; i++) {
 			System.out.println ("Veuillez entrer vos valeurs");
-			valeur_stat = sc.nextFloat();
+			valeur_stat = sc.nextDouble();
 			somme = somme + valeur_stat;
 			}
 		double valeur_moyenne = somme/nombre_valeur;
