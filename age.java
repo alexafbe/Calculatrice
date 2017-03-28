@@ -2,15 +2,15 @@ package Calculatrice;
 
 import java.util.Scanner;
 
-public class age {
+public class Age {
 	public static void main(String[] args){
 int date_Actuelle;
 int jour_naissance;
 int mois_naissance;	
-int année_naissance;
+int annï¿½e_naissance;
 int jour_actuel;
 int mois_actuel;
-int année_actuel;
+int annï¿½e_actuel;
 int age;
 //int
 Scanner sc = new Scanner(System.in);
@@ -19,20 +19,20 @@ System.out.println("veuillez saisir votre jour de naissance:");
 jour_naissance = sc.nextInt();
 System.out.println("veuillez saisir votre mois de naissance:");
 mois_naissance = sc.nextInt();
-System.out.println("veuillez saisir votre année de naissance:");
-année_naissance = sc.nextInt();
+System.out.println("veuillez saisir votre annï¿½e de naissance:");
+annï¿½e_naissance = sc.nextInt();
 System.out.println("veuillez saisir le jour actuel:");
 jour_actuel = sc.nextInt();
 System.out.println("veuillez saisir le mois actuel:");
 mois_actuel = sc.nextInt();
-System.out.println("veuillez saisir l'année actuel");
-année_actuel = sc.nextInt();
-if (année_actuel < année_naissance){
+System.out.println("veuillez saisir l'annï¿½e actuel");
+annï¿½e_actuel = sc.nextInt();
+if (annï¿½e_actuel < annï¿½e_naissance){
 	System.out.println("erreur age negatif");
 }
 else{
 }
-age = année_actuel - année_naissance;
+age = annï¿½e_actuel - annï¿½e_naissance;
 if (mois_actuel < mois_naissance){
 	age = age - 1;
 }
