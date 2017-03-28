@@ -1,7 +1,7 @@
 package Calculatrice;
 import java.util.Scanner;
 
-public class Carré {
+public class Carre {
 	public static void main(String[]args){
 		float Nombre;
 		Scanner sc = new Scanner(System.in);
