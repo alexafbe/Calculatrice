@@ -1,6 +1,5 @@
 package Calculatrice;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.sun.javafx.scene.control.behavior.ScrollBarBehavior;
