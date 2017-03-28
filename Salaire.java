@@ -19,7 +19,7 @@ public class Salaire {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez saisir le salaire annuel brut:");
 		Salaire_Annuel_Brut = (double) sc.nextDouble();
-		System.out.println("Veuillez saisir le pourcentage:");
+		System.out.println("Veuillez saisir le pourcentage (23%,25%,45% ou 50% en fonction de votre statut):");
 		Salaire_Pourcentage = sc.nextInt();
 		System.out.println("Veuillez saisir le Nombre de Mois Travaillés:");
 		Nb_Mois = sc.nextInt();
