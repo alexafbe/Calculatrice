@@ -1,4 +1,3 @@
-package Calculatrice;
 import java.util.Scanner;
 
 public class Trigo {
