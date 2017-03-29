@@ -9,14 +9,14 @@ public class Operation {
 			System.out.println("entrez le nombre a");
 			int nombre1 = sc.nextInt();
 		do{
-			System.out.println("entrez l'opérateur (+,-,*,/ ou =)");
+			System.out.println("entrez l'opÃ©rateur (+,-,*,/ ou =)");
 			operateur = sc.next();
 			System.out.println("entrez le nombre b");
 			int nombre2 = sc.nextInt();
 	
 			if (operateur.equals("+")){ 
 					nombre1 = nombre1+nombre2;
-					System.out.println("Ceci est une opération");}
+					System.out.println("Ceci est une addition");}
 			else if (operateur.equals("-")){
 					nombre1 = nombre1-nombre2;
 					System.out.println("Ceci est une soustraction");} 
