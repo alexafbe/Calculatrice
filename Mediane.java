@@ -11,17 +11,19 @@ public class Mediane {
 		n = sc.nextInt();
 	int[] tab1 = new int[n];
 		System.out.println("integrer valeur au tableau");
-		for(int i = 0; i <= n-1; i++){
-			Scanner fcb = new Scanner(System.in);
+		Scanner fcb = new Scanner(System.in);
+		for(int i = 1; i <= n; i++){
 			System.out.println("valeur " +i);
 			int val = fcb.nextInt();
-			tab1[i]=val;
-			Arrays.sort(tab1);
+			tab1[i-1]=val;
+			//Arrays.sort(tab1);
 			
 			}
-		int mediane;
-		mediane = (n - 1)/2;
-		System.out.println(mediane);
+		fcb.close();
+		System.out.println(Arrays.toString(tab1));
+		int position;
+		position = (n - 1)/2;
+		System.out.println(tab1[position]);
 		}
 }
 
