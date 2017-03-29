@@ -16,14 +16,13 @@ public class Mediane {
 			System.out.println("valeur " +i);
 			int val = fcb.nextInt();
 			tab1[i-1]=val;
-			//Arrays.sort(tab1);
-			
 			}
 		fcb.close();
+		Arrays.sort(tab1);
 		System.out.println(Arrays.toString(tab1));
-		int position;
+		float position;
 		position = (n - 1)/2;
-		System.out.println(tab1[position]);
+		System.out.println(tab1[(int) position]);
 		}
 }
 
