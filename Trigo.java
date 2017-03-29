@@ -5,7 +5,7 @@ public class Trigo {
 	public static void Trigo () {
 		float angle_degre = 0;
 		Scanner sc = new Scanner (System.in);
-		System.out.println ("Saisissez la valeur de votre angle en degrés");
+		System.out.println ("Saisissez la valeur de votre angle en degres");
 		angle_degre = sc.nextFloat();
 		double angle_radian = Math.toRadians(angle_degre);
 		System.out.println("Valeur de votre angle en radian :"+angle_radian);

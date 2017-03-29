@@ -6,12 +6,12 @@ public class Operation {
 	public static void Operation(){
 		String operateur;
 		Scanner sc = new Scanner (System.in);
-			System.out.println("entrez le nombre a");
+			System.out.println("Entrez le nombre A");
 			int nombre1 = sc.nextInt();
 		do{
-			System.out.println("entrez l'opérateur (+,-,*,/ ou =)");
+			System.out.println("Entrez l'operateur (+,-,*,/ ou =)");
 			operateur = sc.next();
-			System.out.println("entrez le nombre b");
+			System.out.println("Entrez le nombre B");
 			int nombre2 = sc.nextInt();
 	
 			if (operateur.equals("+")){ 
