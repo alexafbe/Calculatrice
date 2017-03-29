@@ -2,7 +2,7 @@ package Calculatrice;
 import java.util.Scanner;
 
 public class Carre {
-	public static void main(String[]args){
+	public static void Carre(){
 		float Nombre;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Veuillez taper un chiffre ou un nombre afin de calculer sa racine");

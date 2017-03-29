@@ -3,7 +3,7 @@ package Calculatrice;
 import java.util.Scanner;
 
 public class Exponentielle {
-	public static void main(String[]args){
+	public static void Exponentielle(){
 		float Exponentielle;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Saisissez un chiffre ou un nombre: ");

@@ -1,7 +1,8 @@
+package Calculatrice;
 import java.util.Scanner;
 
 public class Moyenne {
-	public static void main (String [] args) {
+	public static void Moyenne () {
 		double valeur_stat;
 		int nombre_valeur;
 		double somme = 0;

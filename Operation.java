@@ -1,9 +1,9 @@
+package Calculatrice;
 import java.util.Scanner;
 
 public class Operation {
 	
-	public static void main(String[]args ){
-		
+	public static void Operation(){
 		String operateur;
 		Scanner sc = new Scanner (System.in);
 			System.out.println("entrez le nombre a");
@@ -33,6 +33,7 @@ public class Operation {
 			System.out.println(nombre1);
 		}
 	}
+
 }
 		
 

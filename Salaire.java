@@ -5,7 +5,7 @@ import java.util.Scanner;
 import com.sun.javafx.scene.control.behavior.ScrollBarBehavior;
 
 public class Salaire {
-	public static void main (String [] args){
+	public static void Salaire (){
 		double Salaire_Annuel_Brut;
 		double Salaire_Temporaire;
 		double Salaire_Annuel_Net;

@@ -1,7 +1,8 @@
+package Calculatrice;
 import java.util.Scanner;
 
 public class Trigo {
-	public static void main (String [] args) {
+	public static void Trigo () {
 		float angle_degre = 0;
 		Scanner sc = new Scanner (System.in);
 		System.out.println ("Saisissez la valeur de votre angle en degrés");

@@ -3,7 +3,7 @@ package Calculatrice;
 import java.util.Scanner;
 
 public class Logarithme {
-	public static void main(String[]args){
+	public static void Logarithme(){
 		float logarithme;
 		Scanner sc = new Scanner(System.in);
 	
