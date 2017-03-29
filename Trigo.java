@@ -13,7 +13,7 @@ public class Trigo {
 		double sin = Math.sin(angle_radian);
 		System.out.println("Sinus :"+sin);
 		double tan = Math.tan(angle_radian);
-		System.out.println("Tangeante :"+tan);
+		System.out.println("Tangente :"+tan);
 	}
 }
 
