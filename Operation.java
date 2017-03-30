@@ -1,5 +1,6 @@
 package Calculatrice;
 import java.util.Scanner;
+import java.lang.Character;
 
 public class Operation {
 	
@@ -42,10 +43,33 @@ public class Operation {
 			
 		}while(question);			
 		
-		
-		
+		int val;
+		Scanner sb = new Scanner(System.in);
+		System.out.println("Voulez-vous ?");
+		System.out.println("1 : Recommencer ?");
+		System.out.println("2 : Retourner au menu ? (Ne fonctionne pas) ");
+		System.out.println("3 : Quitter?");
+		val = sb.nextInt();
+		while(val > 3 || val < 0){
+			System.out.println("Cette option n'existe pas!");
+			System.out.println("Voulez-vous ?");
+			System.out.println("1 : Recommencer ?");
+			System.out.println("2 : Retourner au menu ? (Ne fonctionne pas) ");
+			System.out.println("3 : Quitter?");
+			val = sb.nextInt();
+		}
+		if (val == 1){
+			Operation operation = new Operation();
+			operation.Operation();
+		}
+		if (val == 2){
+			
+			
+		}
+		if (val == 3){
+			System.exit(0);	
+		}
 	}
 
 }
-		
 
