@@ -3,11 +3,21 @@ import java.util.Scanner;
 
 public class Carre {
 	public static void Carre(){
-		float Nombre;
+		float Nombre = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez taper un chiffre ou un nombre afin de calculer sa racine");
-		Nombre = sc.nextFloat();
-		System.out.println("Sa racine carr�e est " +Math.sqrt(Nombre));
+		boolean isnumber;
+			do { isnumber = true;
+		System.out.println("Veuillez saisir un nombre afin de calculer sa racine carrée :");
+		Scanner fcb = new Scanner (System.in);
+			try {
+		Nombre = fcb.nextInt();
+			} catch (InputMismatchException e)
+		{
+		System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+		isnumber = false;
+		}
+			} while (isnumber != true);
+		System.out.println("Sa racine carrée est " +Math.sqrt(Nombre));
 		int val;
 		Scanner sb = new Scanner(System.in);
 		System.out.println("Voulez-vous ?");
