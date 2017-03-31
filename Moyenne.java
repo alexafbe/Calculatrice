@@ -8,7 +8,6 @@ public class Moyenne {
 		double valeur_stat = 0;
 		int nombre_valeur = 0;
 		double somme = 0;
-		Scanner sc = new Scanner (System.in);
 		boolean isnumber;
 		do { isnumber = true;
 		System.out.println("Veuillez saisir le nombre de valeurs");
