@@ -1,57 +1,159 @@
 package Calculatrice;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Age {
 	public static void Age() {
 		int date_Actuelle;
-		int jour_naissance;
-		int mois_naissance;
-		int annee_naissance;
-		int jour_actuel;
-		int mois_actuel;
-		int annee_actuel;
+		int jour_naissance = 0;
+		int mois_naissance = 0;
+		int annee_naissance = 0;
+		int jour_actuel = 0;
+		int mois_actuel = 0;
+		int annee_actuel = 0;
 		int age1;
 		// int
 		Scanner sc = new Scanner(System.in);
 		// do{
-		System.out.println("veuillez saisir votre jour de naissance:");
-		jour_naissance = sc.nextInt();
+		//System.out.println("veuillez saisir votre jour de naissance:");
+		boolean isnumber;
+		do { isnumber = true;
+			System.out.println("Veuillez saisir votre jour de naissance :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			jour_naissance = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		while (jour_naissance > 31) {
 			System.out.println("un mois ne peut etre compose que de 31 jours maximum!");
-			System.out.println("veuillez saisir votre jour de naissance:");
-			jour_naissance = sc.nextInt();
+			do { isnumber = true;
+			System.out.println("Veuillez saisir votre jour de naissance :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			jour_naissance = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		}
-		System.out.println("veuillez saisir votre mois de naissance: ");
-		mois_naissance = sc.nextInt();
+		do { isnumber = true;
+		System.out.println("Veuillez saisir votre mois de naissance :");
+		Scanner fcb = new Scanner (System.in);
+	try {
+		mois_naissance = fcb.nextInt();
+	} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+	} while (isnumber != true);
 		while (mois_naissance > 12) {
-			System.out.println("Une annee ne peut être compose que de 12 mois!");
-			System.out.println("veuillez saisir votre mois de naissance: ");
-			mois_naissance = sc.nextInt();
+			System.out.println("Une annee ne peut Ãªtre compose que de 12 mois!");
+			do { isnumber = true;
+			System.out.println("Veuillez saisir votre mois de naissance :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			mois_naissance = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		}
 
-		System.out.println("veuillez saisir votre annee de naissance:");
-		annee_naissance = sc.nextInt();
-		System.out.println("veuillez saisir le jour actuel:");
-		jour_actuel = sc.nextInt();
+		do { isnumber = true;
+		System.out.println("Veuillez saisir votre annee de naissance :");
+		Scanner fcb = new Scanner (System.in);
+	try {
+		annee_naissance = fcb.nextInt();
+	} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+	} while (isnumber != true);
+		do { isnumber = true;
+		System.out.println("Veuillez saisir le jour actuel :");
+		Scanner fcb = new Scanner (System.in);
+	try {
+		jour_actuel = fcb.nextInt();
+	} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+	} while (isnumber != true);
 		while (jour_actuel > 31){
 			System.out.println("un mois ne peut etre compose que de 31 jours maximum!");
-			System.out.println("veuillez saisir le jour actuel:");
-			jour_actuel = sc.nextInt();
+			do { isnumber = true;
+			System.out.println("Veuillez saisir le jour actuel :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			jour_actuel = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		}
-		System.out.println("veuillez saisir le mois actuel:");
-		mois_actuel = sc.nextInt();
+		do { isnumber = true;
+		System.out.println("Veuillez saisir le mois actuel :");
+		Scanner fcb = new Scanner (System.in);
+	try {
+		mois_actuel = fcb.nextInt();
+	} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+	} while (isnumber != true);
 		while (mois_actuel > 12){
-			System.out.println("Une annee ne peut être compose que de 12 mois!");
-			System.out.println("veuillez saisir le mois actuel: ");
-			mois_actuel = sc.nextInt();
+			System.out.println("Une annee ne peut Ãªtre compose que de 12 mois!");
+			do { isnumber = true;
+			System.out.println("Veuillez saisir le jour actuel :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			mois_actuel = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		}
-		System.out.println("veuillez saisir l'annee actuel");
-		annee_actuel = sc.nextInt();
+		do { isnumber = true;
+		System.out.println("Veuillez saisir l'annee actuelle :");
+		Scanner fcb = new Scanner (System.in);
+	try {
+		annee_actuel = fcb.nextInt();
+	} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+	} while (isnumber != true);
 		while (annee_actuel < annee_naissance) {
-			System.out.println("erreur age negatif");
-			System.out.println("veuillez saisir l'annee actuel");
-			annee_actuel = sc.nextInt();
+			System.out.println("erreur, age negatif");
+			do { isnumber = true;
+			System.out.println("Veuillez saisir l'annee actuelle :");
+			Scanner fcb = new Scanner (System.in);
+		try {
+			annee_actuel = fcb.nextInt();
+		} catch (InputMismatchException e)
+			{
+				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+				isnumber = false;
+			}
+		} while (isnumber != true);
 		}
 		age1 = annee_actuel - annee_naissance;
 		if (mois_actuel < mois_naissance) {
