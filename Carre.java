@@ -20,21 +20,30 @@ public class Carre {
 		}
 			} while (isnumber != true);
 		System.out.println("Sa racine carrée est " +Math.sqrt(Nombre));
-		int val;
+		int val = 0;
+		boolean isnumber1;
+		do { isnumber1 = true;
 		Scanner sb = new Scanner(System.in);
 		System.out.println("Voulez-vous ?");
 		System.out.println("1 : Recommencer ?");
 		System.out.println("2 : Retourner au menu ? (Ne fonctionne pas) ");
 		System.out.println("3 : Quitter?");
-		val = sb.nextInt();
-		while(val > 3 || val < 0){
-			System.out.println("Cette option n'existe pas!");
-			System.out.println("Voulez-vous ?");
-			System.out.println("1 : Recommencer ?");
-			System.out.println("2 : Retourner au menu ? (Ne fonctionne pas) ");
-			System.out.println("3 : Quitter?");
+		try{
 			val = sb.nextInt();
+			while(val > 3 || val < 0){
+				System.out.println("Cette option n'existe pas!");
+				System.out.println("Voulez-vous ?");
+				System.out.println("1 : Recommencer ?");
+				System.out.println("2 : Retourner au menu ? (Ne fonctionne pas) ");
+				System.out.println("3 : Quitter?");
+				val = sb.nextInt();
 		}
+		}catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+		}while (isnumber != true);
 		if (val == 1){
 			Carre carre= new Carre();
 			carre.Carre();
