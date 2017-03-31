@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Trigo {
 	public static void Trigo () {
 		float angle_degre = 0;
-		Scanner sc = new Scanner (System.in);
 		
 		boolean isnumber;
 			do { isnumber = true;
@@ -16,7 +15,7 @@ public class Trigo {
 				while (angle_degre > 360){
 					System.out.println("Erreur, veuillez saisir un angle inférieur à 360 degres");
 					System.out.println("Saisissez la valeur de votre angle en degres");
-					Scanner fcb = new Scanner (System.in);
+					angle_degre = fcb.nextFloat();
 					}
 			} catch (InputMismatchException e)
 				{
