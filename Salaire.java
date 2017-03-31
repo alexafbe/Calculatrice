@@ -17,7 +17,6 @@ public class Salaire {
 		int Nb_Mois = 0;
 		int Nb_Jours = 0;
 		int Nb_Hours = 0;
-		Scanner sc = new Scanner(System.in);
 		boolean isnumber;
 		do { isnumber = true;
 		System.out.println("Veuillez saisir le salaire annuel brut:");
@@ -48,7 +47,7 @@ public class Salaire {
 		System.out.println("Veuillez saisir le pourcentage (23%,25%,45% ou 50% en fonction de votre statut):");
 		Scanner fcb = new Scanner (System.in);
 		try {
-			Salaire_Pourcentage = sc.nextInt();
+			Salaire_Pourcentage = fcb.nextInt();
 		} catch (InputMismatchException e)
 		{
 			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -60,7 +59,7 @@ public class Salaire {
 		System.out.println("Veuillez saisir le Nombre de Mois Travailles:");
 		Scanner fcb = new Scanner (System.in);
 		try {
-			Nb_Mois = sc.nextInt();
+			Nb_Mois = fcb.nextInt();
 		} catch (InputMismatchException e)
 		{
 			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -73,7 +72,7 @@ public class Salaire {
 			System.out.println("Veuillez saisir le Nombre de Mois Travailles:");
 			Scanner fcb = new Scanner (System.in);
 			try {
-				Nb_Mois = sc.nextInt();
+				Nb_Mois = fcb.nextInt();
 			} catch (InputMismatchException e)
 			{
 				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -85,7 +84,7 @@ public class Salaire {
 		System.out.println("Veuillez saisir le Nombre de Jours Travailles par Mois:");
 		Scanner fcb = new Scanner (System.in);
 		try {
-			Nb_Jours = sc.nextInt();
+			Nb_Jours = fcb.nextInt();
 		} catch (InputMismatchException e)
 		{
 			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -98,7 +97,7 @@ public class Salaire {
 			System.out.println("Veuillez saisir le Nombre de Jours Travailles par Mois:");
 			Scanner fcb = new Scanner (System.in);
 			try {
-				Nb_Jours = sc.nextInt();
+				Nb_Jours = fcb.nextInt();
 			} catch (InputMismatchException e)
 			{
 				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -110,7 +109,7 @@ public class Salaire {
 		System.out.println("Veuillez saisir le Nombre d'Heures Travailles par Jours:");
 		Scanner fcb = new Scanner (System.in);
 		try {
-			Nb_Hours = sc.nextInt();
+			Nb_Hours = fcb.nextInt();
 		} catch (InputMismatchException e)
 		{
 			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -123,7 +122,7 @@ public class Salaire {
 			System.out.println("Veuillez saisir le Nombre d'Heures Travailles par Jours:");
 			Scanner fcb = new Scanner (System.in);
 			try {
-				Nb_Hours = sc.nextInt();
+				Nb_Hours = fcb.nextInt();
 			} catch (InputMismatchException e)
 			{
 				System.out.println("Erreur, la valeur saisie n'est pas un nombre");
