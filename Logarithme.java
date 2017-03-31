@@ -1,17 +1,36 @@
 package Calculatrice;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Logarithme {
 	public static void Logarithme(){
-		float logarithme1;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez entrer un chiffre ou un nombre: ");
-		logarithme1 = sc.nextFloat();
+		float logarithme1 = 0;
+		boolean isnumber;
+		do { isnumber = true;
+		System.out.println("Veuillez saisir un nombre :");
+		Scanner fcb = new Scanner (System.in);
+		try {
+		logarithme1 = fcb.nextInt();
+		} catch (InputMismatchException e)
+		{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+		}
+		} while (isnumber != true);
 		while(logarithme1 < 0){
 			System.out.println("la base d'un logarithme ne peut pas etre negative");
-			System.out.println("Veuillez entrer un chiffre ou un nombre: ");
-			logarithme1 = sc.nextFloat();
+			do { isnumber = true;
+			System.out.println("Veuillez saisir un nombre :");
+			Scanner fcb = new Scanner (System.in);
+			try {
+			logarithme1 = fcb.nextInt();
+			} catch (InputMismatchException e)
+			{
+			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
+			isnumber = false;
+			}
+			} while (isnumber != true);
 		}
 		System.out.println("La valeur logarithmique de"+" "+ logarithme1 +" " + "est: " +Math.log(logarithme1));
 	
