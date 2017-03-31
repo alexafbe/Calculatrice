@@ -13,6 +13,11 @@ public class Trigo {
 				Scanner fcb = new Scanner (System.in);
 			try {
 				angle_degre = fcb.nextFloat();
+				while (angle_degre > 360){
+					System.out.println("Erreur, veuillez saisir un angle inférieur à 360 degres");
+					System.out.println("Saisissez la valeur de votre angle en degres");
+					Scanner fcb = new Scanner (System.in);
+					}
 			} catch (InputMismatchException e)
 				{
 					System.out.println("Erreur, la valeur saisie n'est pas un nombre");
@@ -21,20 +26,7 @@ public class Trigo {
 			} while (isnumber != true);
 			
 		double angle_radian = Math.toRadians(angle_degre);
-			while (angle_degre > 360){
-				System.out.println("Erreur, veuillez saisir un angle inférieur à 360 degres");
-				do { isnumber = true;
-				System.out.println("Saisissez la valeur de votre angle en degres");
-				Scanner fcb = new Scanner (System.in);
-			try {
-				angle_degre = fcb.nextFloat();
-			} catch (InputMismatchException e)
-				{
-					System.out.println("Erreur, la valeur saisie n'est pas un nombre");
-					isnumber = false;
-				}
-			} while (isnumber != true);
-			}
+			
 		System.out.println("Valeur de votre angle en radian :"+angle_radian);
 		double cos = Math.cos(angle_radian);
 		System.out.println("Cosinus :"+cos);
