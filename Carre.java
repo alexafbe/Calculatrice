@@ -41,9 +41,9 @@ public class Carre {
 		}catch (InputMismatchException e)
 		{
 			System.out.println("Erreur, la valeur saisie n'est pas un nombre");
-			isnumber = false;
+			isnumber1 = false;
 		}
-		}while (isnumber != true);
+		}while (isnumber1 != true);
 		if (val == 1){
 			Carre carre= new Carre();
 			carre.Carre();
