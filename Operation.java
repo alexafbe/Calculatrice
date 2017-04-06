@@ -1,6 +1,7 @@
 package Calculatrice;
 import java.util.Scanner;
 import java.lang.Character;
+import java.util.InputMismatchException;
 
 public class Operation {
 	
